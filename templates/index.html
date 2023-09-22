@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="CareerVaani is a AI counselling model">
+        <meta name="Heckitects" content="Career Predication">
+        <!-- Website Title -->
+        <title>Careerवाणी</title>
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/fontawesome-all.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/swiper.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/magnific-popup.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicon  -->
+        <link rel="icon" href="static/images/icon.png">
+        <!-- Preloader -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <!-- end of preloader -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html">
+                    <img src="static/images/logo.png" alt="alternative">
+                </a>
+                <!-- Mobile Menu Toggle Button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-awesome fas fa-bars"></span>
+                    <span class="navbar-toggler-awesome fas fa-times"></span>
+                </button>
+                <!-- end of mobile menu toggle button -->
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#header">
+                                HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#features">MODELS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#pricing">PRICING</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item">
+                        <a class="btn-outline-sm" href="log-in.html">LOG IN</a>
+                    </span>
+                </div>
+            </div>
+            <!-- end of container -->
+        </nav>
+        <!-- end of navbar -->
+        <!-- end of navigation -->
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="header-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="text-container">
+                                <h1>Navigating Futures, Illuminating Paths</h1>
+                                <p class="p-large">We give career preferences based on YOU !!</p>
+                                <a class="btn-solid-lg page-scroll" href="sign-up.html">SIGN UP</a>
+                            </div>
+                            <!-- end of text-container -->
+                        </div>
+                        <!-- end of col -->
+                        <div class="col-lg-6 col-xl-7">
+                            <div class="image-container">
+                                <div class="img-wrapper">
+                                    <img class="img-fluid" src="static/images/headerapp.png" alt="alternative">
+                                </div>
+                                <!-- end of img-wrapper -->
+                            </div>
+                            <!-- end of image-container -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of header-content -->
+        </header>
+        <!-- end of header -->
+        <svg
+            class="header-frame"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            viewBox="0 0 1920 310"
+        >
+            <defs>
+                <style>.cls-1{fill:#5f4def;}</style>
+            </defs>
+            <title>header-frame</title>
+            <path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/>
+        </svg>
+        <!-- end of header -->
+        <!-- Description -->
+        <div class="cards-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h2-heading"></h2>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="static/images/sentiment.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Sentiment Analysis</h4>
+                                <p>Get choices based on your current scenario</p>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="static/images/swot.png" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">SWOT Analysis</h4>
+                                <p>Figure out the domains according to your strengths</p>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="static/images/svm.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Questionnaire</h4>
+                                <p>Test the models to give you a personalized choice among a set of career options</p>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of cards-1 -->
+        <!-- end of description -->
+        <!-- Features -->
+        <div id="features" class="tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h2-heading">Career Prediction System</h2>
+                        <br>
+                        <p class="p-heading">Unlock your full potential with precise insights tailored just for you. Our advanced algorithms analyze your unique skills, interests, and strengths to provide a clear path towards a fulfilling and prosperous career. Say goodbye to uncertainty and hello to confidence in your professional journey.</p>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Tabs Links -->
+                        <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    id="nav-tab-1"
+                                    data-toggle="tab"
+                                    href="#tab-1"
+                                    role="tab"
+                                    aria-controls="tab-1"
+                                    aria-selected="true"
+                                >
+                                    <i class="fas fa-list"></i>
+                                    SWOT Model
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="nav-tab-2"
+                                    data-toggle="tab"
+                                    href="#tab-2"
+                                    role="tab"
+                                    aria-controls="tab-2"
+                                    aria-selected="false"
+                                >
+                                    <i class="fas fa fa-gears"></i>
+                                    Advanced Models
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="nav-tab-3"
+                                    data-toggle="tab"
+                                    href="#tab-3"
+                                    role="tab"
+                                    aria-controls="tab-3"
+                                    aria-selected="false"
+                                >
+                                    <i class="fa fa-smile-o"></i>
+                                    Sentiments Model
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end of tabs links -->
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="argoTabsContent">
+                            <!-- Tab -->
+                            <div
+                                class="tab-pane fade show active"
+                                id="tab-1"
+                                role="tabpanel"
+                                aria-labelledby="tab-1"
+                            >
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="image-container">
+                                            <img class="img-fluid" src="static/images/swotmodel.jpg" alt="alternative">
+                                        </div>
+                                        <!-- end of image-container -->
+                                    </div>
+                                    <!-- end of col -->
+                                    <div class="col-lg-6">
+                                        <div class="text-container">
+                                            <h3>Identify your strong domains</h3>
+                                            <p>
+                                                You are required to take a aptitude test based on which the career likeliness in a particular subject is predicted.
+                                                <ul class="list-unstyled li-space-lg">
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Strengths are identified based on positive attributes in user responses.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Weaknesses are pinpointed where user exhibits limitations or gaps.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Opportunities are extracted from external factors indicated by the user.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Threats are assessed based on potential challenges mentioned.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Each element (Strengths, Weaknesses, Opportunities, Threats) is given weightage.</div>
+                                                    </li>
+                                                </ul>
+                                                <a class="btn-solid-reg popup-with-move-anim" href="aptitude.html">START</a>
+                                            </div>
+                                            <!-- end of text-container -->
+                                        </div>
+                                        <!-- end of col -->
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                                <!-- end of tab-pane -->
+                                <!-- end of tab -->
+                                <!-- Tab -->
+                                <!-- Tab -->
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab-2"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-2"
+                                >
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="image-container">
+                                                <img class="img-fluid" src="static/images/mlmodel.jpg" alt="alternative">
+                                            </div>
+                                            <!-- end of image-container -->
+                                        </div>
+                                        <!-- end of col -->
+                                        <div class="col-lg-6">
+                                            <div class="text-container">
+                                                <h3>Advanced ML Algorithms</h3>
+                                                <p>User provides data via questionnaire.Various models are used to get precise recommendations for the user</p>
+                                                <ul class="list-unstyled li-space-lg">
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Utilizes  Logistic Regression, Random Forest ,Gradient Boosting K-Nearest Neighbors, Neural Networks, Naive Bayes, Decision Trees, SVM Linear, SVM Polynomial for predictions</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Each algorithm independently predicts career options.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Combines predictions through a voting mechanism.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Presents user with recommended career among specified options based on aggregated insights.</div>
+                                                    </li>
+                                                </ul>
+                                                <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">START</a>
+                                            </div>
+                                            <!-- end of text-container -->
+                                        </div>
+                                        <!-- end of col -->
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                                <!-- end of tab-pane -->
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab-3"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-3"
+                                >
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="image-container">
+                                                <img class="img-fluid" src="static/images/sentimodel.png" alt="alternative">
+                                            </div>
+                                            <!-- end of image-container -->
+                                        </div>
+                                        <!-- end of col -->
+                                        <div class="col-lg-6">
+                                            <div class="text-container">
+                                                <h3>Get the sentiments right!</h3>
+                                                <p>The model implements cutting-edge sentiment analysis to evaluate student feedback.</p>
+                                                <ul class="list-unstyled li-space-lg">
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Categorizes sentiments into positive, negative, and neutral categories.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Recognizes potential influencers like parental pressure and peer dynamics.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Provides deeper understanding of challenges and stressors faced by students.</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body">Enables personalized guidance and interventions for individual student needs.</div>
+                                                    </li>
+                                                </ul>
+                                                <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">START</a>
+                                            </div>
+                                            <!-- end of text-container -->
+                                        </div>
+                                        <!-- end of col -->
+                                    </div>
+                                    <!-- end of row -->
+                                </div>
+                                <!-- end of tab-pane -->
+                                <!-- end of tab -->
+                                <!-- end of tab -->
+                            </div>
+                            <!-- end of tab content -->
+                            <!-- end of tabs content -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of tabs -->
+            <!-- end of features -->
+            <!-- Pricing -->
+            <div id="pricing" class="cards-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="h2-heading">Pricing Options</h2>
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Card-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">BASIC</div>
+                                    <div class="price">
+                                        <span class="currency">₹</span>
+                                        <span class="value">Free</span>
+                                    </div>
+                                    <div class="frequency">LIFETIME</div>
+                                    <div class="divider"></div>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">SWOT Analysis Model</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-times"></i>
+                                            <div class="media-body">Advanced ML Algorithms Questionnaire</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-times"></i>
+                                            <div class="media-body">Sentiment Analysis Model</div>
+                                        </li>
+                                    </ul>
+                                    <div class="button-wrapper">
+                                        <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of card -->
+                            <!-- end of card -->
+                            <!-- Card-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">PREMIUM</div>
+                                    <div class="price">
+                                        <span class="currency">₹</span>
+                                        <span class="value">89</span>
+                                    </div>
+                                    <div class="frequency">YEARLY</div>
+                                    <div class="divider"></div>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">SWOT Analysis Model</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">Advanced ML Algorithms Questionnaire</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-times"></i>
+                                            <div class="media-body">Sentiment Analysis Model</div>
+                                        </li>
+                                    </ul>
+                                    <div class="button-wrapper">
+                                        <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of card -->
+                            <!-- end of card -->
+                            <!-- Card-->
+                            <div class="card">
+                                <!--<div class="label">
+                            <p class="best-value">Best Value</p>
+                        </div> -->
+                                <div class="card-body">
+                                    <div class="card-title">PREMIUM PRO</div>
+                                    <div class="price">
+                                        <span class="currency">₹</span>
+                                        <span class="value">129</span>
+                                    </div>
+                                    <div class="frequency">YEARLY</div>
+                                    <div class="divider"></div>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">SWOT Analysis Model</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">Advanced ML Algorithms Questionnaire</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-check"></i>
+                                            <div class="media-body">Sentiment Analysis Model</div>
+                                        </li>
+                                    </ul>
+                                    <div class="button-wrapper">
+                                        <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of card -->
+                            <!-- end of card -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of cards-2 -->
+            <!-- end of pricing -->
+            <!-- Testimonials -->
+            <h2 class="h2-heading" align="center">Testimonials</h2>
+            <div class="slider-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Text Slider -->
+                            <div class="slider-container">
+                                <div class="swiper-container text-slider">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="static/images/testimonial-1.jpg" alt="alternative">
+                                            </div>
+                                            <!-- end of image-wrapper -->
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">"I can't thank CareerVaani enough for helping me find my true calling! The personalized guidance and insightful analysis were spot-on. It not only recognized my strengths but also understood the external factors that were influencing my decisions. Thanks to CareerVaani, I'm now pursuing a career that aligns perfectly with my passions. Highly recommend it to every student out there!"</div>
+                                                <div class="testimonial-author">Priya R.</div>
+                                            </div>
+                                            <!-- end of text-wrapper -->
+                                        </div>
+                                        <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="static/images/testimonial-2.jpg" alt="alternative">
+                                            </div>
+                                            <!-- end of image-wrapper -->
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">"CareerVaani has been a game-changer for me. The precision in their guidance was astounding. It pinpointed my strengths and interests with incredible accuracy. What really stood out was how it understood the external pressures I was facing. This level of empathy is rare to find. Thanks to CareerVaani, I feel confident and excited about my future!"</div>
+                                                <div class="testimonial-author">Anuj K.</div>
+                                            </div>
+                                            <!-- end of text-wrapper -->
+                                        </div>
+                                        <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="static/images/testimonial-3.jpg" alt="alternative">
+                                            </div>
+                                            <!-- end of image-wrapper -->
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">"CareerVaani is a gem! It provided me with such precise guidance based on my strengths and interests. What really impressed me was how it took into account the external factors like peer pressure. This showed me that CareerVaani genuinely cares about my success. Thanks to them, I'm confidently moving forward in my chosen field!"</div>
+                                                <div class="testimonial-author">Sneha G.</div>
+                                            </div>
+                                            <!-- end of text-wrapper -->
+                                        </div>
+                                        <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="static/images/testimonial-4.jpg" alt="alternative">
+                                            </div>
+                                            <!-- end of image-wrapper -->
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">"I was feeling lost about my career options, but CareerVaani changed everything. The personalized advice and detailed analysis were invaluable. It not only recognized my strengths but also understood the influence my family had on my decisions. I'm now on a path that feels right for me. Thank you, CareerVaani, for guiding me towards success!"</div>
+                                                <div class="testimonial-author">Arina N.</div>
+                                            </div>
+                                            <!-- end of text-wrapper -->
+                                        </div>
+                                        <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                    </div>
+                                    <!-- end of swiper-wrapper -->
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <!-- end of add arrows -->
+                                </div>
+                                <!-- end of swiper-container -->
+                            </div>
+                            <!-- end of slider-container -->
+                            <!-- end of text slider -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of slider-2 -->
+            <!-- end of testimonials -->
+            <!-- Feedback -->
+            <div class="form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-container">
+                                <div class="above-heading"></div>
+                                <h2>We would love to hear your experience!</h2>
+                                <!-- Newsletter Form -->
+                                <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                                    <div class="form-group">
+                                        <input class="form-control-input" id="nemail" required>
+                                        <label class="label-control" for="nemail">Feedback</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="form-control-submit-button">SEND</button>
+                                    </div>
+                                    <div class="form-message">
+                                        <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                                    </div>
+                                </form>
+                                <!-- end of newsletter form -->
+                            </div>
+                            <!-- end of text-container -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of form -->
+            <!-- end of newsletter -->
+            <!-- Footer -->
+            <svg
+                class="footer-frame"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                viewBox="0 0 1920 79"
+            >
+                <defs>
+                    <style>.cls-2{fill:#5f4def;}</style>
+                </defs>
+                <title>footer-frame</title>
+                <path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/>
+            </svg>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-col first">
+                                <h4>ABOUT US</h4>
+                                <p class="p-small">
+                                    Our aim is to make career choices and AI based counselling accessible to every child at secondary level along with aptitude tests and detailed career paths. The various models handhold student in assessing his capabilities and subsequently help him in deciding a career path.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                        <div class="col-md-4">
+                            <div class="footer-col middle"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-col last">
+                                <h4>CONTACT THE TEAM</h4>
+                                <ul class="list-unstyled li-space-lg p-small">
+                                    <li class="media">
+                                        <i class="fa fa-users"></i>
+                                        <div class="media-body">
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/">Prit Mhala</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/krish-yadav-1aa00422a/">Krish Yadav</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/connectamogh/">Amogh Gupta</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/gaurang-paliwal-4bb2ba20b/">Gaurang Paliwal</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/akshita-agarwal-b67587264/">Akshita Agarwal</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/akansha-mulchandani-124401216/">Akansha Mulchandani</a>
+                                            </li>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of footer -->
+            <!-- end of footer -->
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="p-small">
+                                Made with
+                                <i class="fa fa-heart"></i>
+                                by Hackitects
+                            </a>
+                        </p>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- enf of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of copyright -->
+        <!-- end of copyright -->
+        <!-- Scripts -->
+        <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+        <!-- jQuery for Bootstrap's JavaScript plugins -->
+        <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+        <!-- Popper tooltip library for Bootstrap -->
+        <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+        <!-- Bootstrap framework -->
+        <script src="{{url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+        <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="{{url_for('static',filename='js/swiper.min.js')}}"></script>
+        <!-- Swiper for image and text sliders -->
+        <script src="{{url_for('static',filename='js/validator.min.js')}}"></script>
+        <!-- Validator.js - Bootstrap plugin that validates forms -->
+        <script src="{{url_for('static',filename='js/scripts.js')}}"></script>
+        <!-- Custom scripts -->
+    </body>
+</html>

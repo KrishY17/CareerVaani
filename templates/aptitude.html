@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aptitude Test</title>
+        <!-- Website Title -->
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/fontawesome-all.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/swiper.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/magnific-popup.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles1.css')}}">
+        <!-- Favicon  -->
+        <link rel="icon" href="static/images/icon.png">
+        <!-- Preloader -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <!--Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html">
+                    <img src="static/images/logo.png" alt="alternative">
+                </a>
+                <!-- Mobile Menu Toggle Button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-awesome fas fa-bars"></span>
+                    <span class="navbar-toggler-awesome fas fa-times"></span>
+                </button>
+                <!-- end of mobile menu toggle button -->
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="index.html">
+                                HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <!-- end of container -->
+            </nav>
+            <!-- end of navbar -->
+            <!-- end of navigation -->
+            <div class="form-container">
+                <form id="sampleForm" action="/predictswot" method="post">
+                    <h1>Aptitude Test</h1>
+                    <br>
+                    <h3>Math Quiz</h3>
+                    <br>
+                    <form id="quizForm">
+                        <ol>
+                            <!-- Easy Questions : (1 mark each)-->
+                            <!-- Question 1 -->
+                            <li>
+                                <label>What is the result of 12 + 5?</label>
+                                <br>
+                                <input type="radio" name="q1" value="a">
+                                a. 7
+                                <br>
+                                <input type="radio" name="q1" value="b">
+                                b. 15
+                                <br>
+                                <input type="radio" name="q1" value="c">
+                                c. 17
+                                <br>
+                                <input type="radio" name="q1" value="d">
+                                d. 19
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 2 -->
+                            <li>
+                                <label>Calculate 3/4 of 24.</label>
+                                <br>
+                                <input type="radio" name="q2" value="a">
+                                a. 9
+                                <br>
+                                <input type="radio" name="q2" value="b">
+                                b. 12
+                                <br>
+                                <input type="radio" name="q2" value="c">
+                                c. 18
+                                <br>
+                                <input type="radio" name="q2" value="d">
+                                d. 21
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 3 -->
+                            <li>
+                                <label>If x = 4 and y = 3, what is the value of x^2 + y^2?</label>
+                                <br>
+                                <input type="radio" name="q3" value="a">
+                                a. 7
+                                <br>
+                                <input type="radio" name="q3" value="b">
+                                b. 16
+                                <br>
+                                <input type="radio" name="q3" value="c">
+                                c. 25
+                                <br>
+                                <input type="radio" name="q3" value="d">
+                                d. 49
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 4 -->
+                            <li>
+                                <label>What is the square root of 121?</label>
+                                <br>
+                                <input type="radio" name="q4" value="a">
+                                a. 9
+                                <br>
+                                <input type="radio" name="q4" value="b">
+                                b. 11
+                                <br>
+                                <input type="radio" name="q4" value="c">
+                                c. 12
+                                <br>
+                                <input type="radio" name="q4" value="d">
+                                d. 13
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions: (2 marks each) -->
+                            <!-- Question 5 -->
+                            <li>
+                                <label>Solve for x: 2x - 5 = 11.</label>
+                                <br>
+                                <input type="radio" name="q5" value="a">
+                                a. x = 3
+                                <br>
+                                <input type="radio" name="q5" value="b">
+                                b. x = 4
+                                <br>
+                                <input type="radio" name="q5" value="c">
+                                c. x = 5
+                                <br>
+                                <input type="radio" name="q5" value="d">
+                                d. x = 6
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 6 -->
+                            <li>
+                                <label>What is the area of a right triangle with a base of 6 units and a height of 8 units?</label>
+                                <br>
+                                <input type="radio" name="q6" value="a">
+                                a. 12 square units
+                                <br>
+                                <input type="radio" name="q6" value="b">
+                                b. 24 square units
+                                <br>
+                                <input type="radio" name="q6" value="c">
+                                c. 30 square units
+                                <br>
+                                <input type="radio" name="q6" value="d">
+                                d. 48 square units
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 7 -->
+                            <li>
+                                <label>If a box contains 12 red balls, 8 blue balls, and 5 green balls, what is the probability of selecting a blue ball randomly?</label>
+                                <br>
+                                <input type="radio" name="q7" value="a">
+                                a. 1/4
+                                <br>
+                                <input type="radio" name="q7" value="b">
+                                b. 1/3
+                                <br>
+                                <input type="radio" name="q7" value="c">
+                                c. 2/5
+                                <br>
+                                <input type="radio" name="q7" value="d">
+                                d. 3/8
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 8 -->
+                            <li>
+                                <label>
+                                    Solve the system of equations:
+                                    <br>
+                                    2x + 3y = 12
+                                    <br>
+                                    3x - 2y = 7
+                                </label>
+                                <br>
+                                <input type="radio" name="q8" value="a">
+                                a. x = 3, y = 2
+                                <br>
+                                <input type="radio" name="q8" value="b">
+                                b. x = 2, y = 3
+                                <br>
+                                <input type="radio" name="q8" value="c">
+                                c. x = 1, y = 4
+                                <br>
+                                <input type="radio" name="q8" value="d">
+                                d. x = 4, y = 1
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 9 -->
+                            <li>
+                                <label>Find the area of a circle with a radius of 10 units. (Use π ≈ 3.14)</label>
+                                <br>
+                                <input type="radio" name="q9" value="a">
+                                a. 31.4 square units
+                                <br>
+                                <input type="radio" name="q9" value="b">
+                                b. 100 square units
+                                <br>
+                                <input type="radio" name="q9" value="c">
+                                c. 314 square units
+                                <br>
+                                <input type="radio" name="q9" value="d">
+                                d. 628 square units
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 10 -->
+                            <li>
+                                <label>What is the least common multiple (LCM) of 6 and 8?</label>
+                                <br>
+                                <input type="radio" name="q10" value="a">
+                                a. 12
+                                <br>
+                                <input type="radio" name="q10" value="b">
+                                b. 16
+                                <br>
+                                <input type="radio" name="q10" value="c">
+                                c. 18
+                                <br>
+                                <input type="radio" name="q10" value="d">
+                                d. 24
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 11 -->
+                            <li>
+                                <label>Calculate the square root of 729.</label>
+                                <br>
+                                <input type="radio" name="q11" value="a">
+                                a. 9
+                                <br>
+                                <input type="radio" name="q11" value="b">
+                                b. 18
+                                <br>
+                                <input type="radio" name="q11" value="c">
+                                c. 27
+                                <br>
+                                <input type="radio" name="q11" value="d">
+                                d. 81
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 12 -->
+                            <li>
+                                <label>Solve for x in the equation: 2^x = 16.</label>
+                                <br>
+                                <input type="radio" name="q12" value="a">
+                                a. x = 2
+                                <br>
+                                <input type="radio" name="q12" value="b">
+                                b. x = 3
+                                <br>
+                                <input type="radio" name="q12" value="c">
+                                c. x = 4
+                                <br>
+                                <input type="radio" name="q12" value="d">
+                                d. x = 5
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 13 -->
+                            <li>
+                                <label>A car travels at a constant speed of 80 kilometers per hour. How long will it take to cover a distance of 240 kilometers?</label>
+                                <br>
+                                <input type="radio" name="q13" value="a">
+                                a. 2 hours
+                                <br>
+                                <input type="radio" name="q13" value="b">
+                                b. 3 hours
+                                <br>
+                                <input type="radio" name="q13" value="c">
+                                c. 4 hours
+                                <br>
+                                <input type="radio" name="q13" value="d">
+                                d. 5 hours
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 14 -->
+                            <li>
+                                <label>Calculate the value of 5C2 (5 choose 2).</label>
+                                <br>
+                                <input type="radio" name="q14" value="a">
+                                a. 10
+                                <br>
+                                <input type="radio" name="q14" value="b">
+                                b. 15
+                                <br>
+                                <input type="radio" name="q14" value="c">
+                                c. 20
+                                <br>
+                                <input type="radio" name="q14" value="d">
+                                d. 30
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 15 -->
+                            <li>
+                                <label>What is the probability of drawing a red card (hearts or diamonds) from a standard deck of 52 playing cards?</label>
+                                <br>
+                                <input type="radio" name="q15" value="a">
+                                a. 1/2
+                                <br>
+                                <input type="radio" name="q15" value="b">
+                                b. 1/4
+                                <br>
+                                <input type="radio" name="q15" value="c">
+                                c. 1/3
+                                <br>
+                                <input type="radio" name="q15" value="d">
+                                d. 1/6
+                                <br>
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <br>
+                        <h3>Physics Quiz</h3>
+                        <br>
+                        <ol>
+                            <!-- Easy Questions: (1 marks each) -->
+                            <!-- Question 16 -->
+                            <li>
+                                <label>What is the SI unit for measuring time?</label>
+                                <br>
+                                <input type="radio" name="q16" value="a">
+                                a. Joule
+                                <br>
+                                <input type="radio" name="q16" value="b">
+                                b. Meter
+                                <br>
+                                <input type="radio" name="q16" value="c">
+                                c. Second
+                                <br>
+                                <input type="radio" name="q16" value="d">
+                                d. Kilogram
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 17 -->
+                            <li>
+                                <label>What is the term for the resistance of an object to changes in its state of motion?</label>
+                                <br>
+                                <input type="radio" name="q17" value="a">
+                                a. Friction
+                                <br>
+                                <input type="radio" name="q17" value="b">
+                                b. Inertia
+                                <br>
+                                <input type="radio" name="q17" value="c">
+                                c. Velocity
+                                <br>
+                                <input type="radio" name="q17" value="d">
+                                d. Acceleration
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 18 -->
+                            <li>
+                                <label>Which color of light has the highest frequency?</label>
+                                <br>
+                                <input type="radio" name="q18" value="a">
+                                a. Red
+                                <br>
+                                <input type="radio" name="q18" value="b">
+                                b. Blue
+                                <br>
+                                <input type="radio" name="q18" value="c">
+                                c. Green
+                                <br>
+                                <input type="radio" name="q18" value="d">
+                                d. Yellow
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 19 -->
+                            <li>
+                                <label>What is the law of reflection?</label>
+                                <br>
+                                <input type="radio" name="q19" value="a">
+                                a. The angle of incidence is equal to the angle of reflection.
+                                <br>
+                                <input type="radio" name="q19" value="b">
+                                b. Light bends when it passes from one medium to another.
+                                <br>
+                                <input type="radio" name="q19" value="c">
+                                c. The angle of incidence is equal to the angle of refraction.
+                                <br>
+                                <input type="radio" name="q19" value="d">
+                                d. Light is absorbed by all surfaces it strikes.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions(2 marks each) -->
+                            <!-- Question 20 -->
+                            <li>
+                                <label>What is the relationship between mass, force, and acceleration described by Newton's second law?</label>
+                                <br>
+                                <input type="radio" name="q20" value="a">
+                                a. F = ma
+                                <br>
+                                <input type="radio" name="q20" value="b">
+                                b. F = mv
+                                <br>
+                                <input type="radio" name="q20" value="c">
+                                c. F = mc^2
+                                <br>
+                                <input type="radio" name="q20" value="d">
+                                d. F = mg
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 21 -->
+                            <li>
+                                <label>What is the difference between nuclear fusion and nuclear fission?</label>
+                                <br>
+                                <input type="radio" name="q21" value="a">
+                                a. Fusion releases energy by splitting atoms, while fission releases energy by combining them.
+                                <br>
+                                <input type="radio" name="q21" value="b">
+                                b. Fusion is the process that powers the sun, while fission is used in nuclear reactors.
+                                <br>
+                                <input type="radio" name="q21" value="c">
+                                c. Fusion releases more energy than fission.
+                                <br>
+                                <input type="radio" name="q21" value="d">
+                                d. Fission occurs naturally, while fusion requires controlled conditions.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 22 -->
+                            <li>
+                                <label>What is the principle behind a transformer in electrical circuits?</label>
+                                <br>
+                                <input type="radio" name="q22" value="a">
+                                a. It stores electrical energy.
+                                <br>
+                                <input type="radio" name="q22" value="b">
+                                b. It converts mechanical energy into electrical energy.
+                                <br>
+                                <input type="radio" name="q22" value="c">
+                                c. It steps up or steps down voltage through electromagnetic induction.
+                                <br>
+                                <input type="radio" name="q22" value="d">
+                                d. It amplifies sound waves.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 23 -->
+                            <li>
+                                <label>Explain the concept of time dilation as described by Einstein's theory of relativity.</label>
+                                <br>
+                                <input type="radio" name="q23" value="a">
+                                a. Time dilation is the slowing of time for an object in motion relative to a stationary observer, as described by the theory of relativity.
+                                <br>
+                                <input type="radio" name="q23" value="b">
+                                b. Time dilation is the speeding up of time for an object in motion.
+                                <br>
+                                <input type="radio" name="q23" value="c">
+                                c. Time dilation only occurs for objects traveling at the speed of light.
+                                <br>
+                                <input type="radio" name="q23" value="d">
+                                d. Time dilation is a concept unrelated to relativity.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 24 -->
+                            <li>
+                                <label>What is the Heisenberg Uncertainty Principle in quantum mechanics?</label>
+                                <br>
+                                <input type="radio" name="q24" value="a">
+                                a. It states that the position and momentum of a particle can be precisely determined simultaneously.
+                                <br>
+                                <input type="radio" name="q24" value="b">
+                                b. It states that the speed and direction of a particle can be precisely determined.
+                                <br>
+                                <input type="radio" name="q24" value="c">
+                                c. It asserts that it is impossible to simultaneously know both the position and momentum of a particle with arbitrary precision.
+                                <br>
+                                <input type="radio" name="q24" value="d">
+                                d. It states that all quantum particles are inherently unpredictable.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 25 -->
+                            <li>
+                                <label>Describe the operation of a photovoltaic (PV) solar cell and its role in converting sunlight into electricity.</label>
+                                <br>
+                                <input type="radio" name="q25" value="a">
+                                a. A PV cell absorbs photons from sunlight, releasing electrons that create an electric current.
+                                <br>
+                                <input type="radio" name="q25" value="b">
+                                b. A PV cell reflects sunlight to generate electricity.
+                                <br>
+                                <input type="radio" name="q25" value="c">
+                                c. A PV cell generates electricity through chemical reactions with sunlight.
+                                <br>
+                                <input type="radio" name="q25" value="d">
+                                d. A PV cell emits photons when exposed to sunlight.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 26 -->
+                            <li>
+                                <label>What are quarks, and how do they relate to the composition of protons and neutrons in atomic nuclei?</label>
+                                <br>
+                                <input type="radio" name="q26" value="a">
+                                a. Quarks are elementary particles that make up protons and neutrons in atomic nuclei.
+                                <br>
+                                <input type="radio" name="q26" value="b">
+                                b. Quarks are subatomic particles found in electrons.
+                                <br>
+                                <input type="radio" name="q26" value="c">
+                                c. Quarks are responsible for electromagnetic interactions.
+                                <br>
+                                <input type="radio" name="q26" value="d">
+                                d. Quarks are not related to atomic nuclei.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 27 -->
+                            <li>
+                                <label>Explain the concept of dark matter in astrophysics and its role in the universe.</label>
+                                <br>
+                                <input type="radio" name="q27" value="a">
+                                a. Dark matter is invisible matter that makes up most of the universe's mass and plays a key role in its structure.
+                                <br>
+                                <input type="radio" name="q27" value="b">
+                                b. Dark matter is a form of energy that accelerates the universe's expansion.
+                                <br>
+                                <input type="radio" name="q27" value="c">
+                                c. Dark matter is responsible for creating black holes.
+                                <br>
+                                <input type="radio" name="q27" value="d">
+                                d. Dark matter is a concept unrelated to astrophysics.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 28 -->
+                            <li>
+                                <label>What is the difference between a series circuit and a parallel circuit in electrical circuits, and how do they affect the flow of current and voltage?</label>
+                                <br>
+                                <input type="radio" name="q28" value="a">
+                                a. In a series circuit, components are connected in a single path, and current is the same in all components. In a parallel circuit, components are connected in multiple paths, and voltage is the same across all components.
+                                <br>
+                                <input type="radio" name="q28" value="b">
+                                b. In a series circuit, components are connected in multiple paths, and voltage is the same across all components. In a parallel circuit, components are connected in a single path, and current is the same in all components.
+                                <br>
+                                <input type="radio" name="q28" value="c">
+                                c. Series and parallel circuits have no effect on current or voltage.
+                                <br>
+                                <input type="radio" name="q28" value="d">
+                                d. Series and parallel circuits are identical.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 29 -->
+                            <li>
+                                <label>Describe the Doppler effect as it applies to both sound and light waves, including its impact on observed frequencies.</label>
+                                <br>
+                                <input type="radio" name="q29" value="a">
+                                a. The Doppler effect is the change in frequency or wavelength of a wave as an observer moves relative to the source of the wave, leading to frequency shifts in both sound and light waves.
+                                <br>
+                                <input type="radio" name="q29" value="b">
+                                b. The Doppler effect only applies to light waves, not sound waves.
+                                <br>
+                                <input type="radio" name="q29" value="c">
+                                c. The Doppler effect does not affect observed frequencies.
+                                <br>
+                                <input type="radio" name="q29" value="d">
+                                d. The Doppler effect is a concept unrelated to waves.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 30 -->
+                            <li>
+                                <label>Explain the concept of terminal velocity in the context of free fall.</label>
+                                <br>
+                                <input type="radio" name="q30" value="a">
+                                a. Terminal velocity is the maximum velocity reached by a falling object when the air resistance equals the gravitational force.
+                                <br>
+                                <input type="radio" name="q30" value="b">
+                                b. Terminal velocity is the initial velocity of a falling object.
+                                <br>
+                                <input type="radio" name="q30" value="c">
+                                c. Terminal velocity is achieved only in a vacuum, not in the presence of air.
+                                <br>
+                                <input type="radio" name="q30" value="d">
+                                d. Terminal velocity is the minimum velocity required for an object to start falling.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <br>
+                        <h3>Chemistry Quiz</h3>
+                        <br>
+                        <ol>
+                            <!-- Easy Questions (1 marks each)-->
+                            <!-- Question 31 -->
+                            <li>
+                                <label>What is the chemical symbol for the element oxygen?</label>
+                                <br>
+                                <input type="radio" name="q31" value="a">
+                                a. O2
+                                <br>
+                                <input type="radio" name="q31" value="b">
+                                b. Ox
+                                <br>
+                                <input type="radio" name="q31" value="c">
+                                c. O
+                                <br>
+                                <input type="radio" name="q31" value="d">
+                                d. Ox2
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 32 -->
+                            <li>
+                                <label>Which element is the most abundant in Earth's crust?</label>
+                                <br>
+                                <input type="radio" name="q32" value="a">
+                                a. Iron
+                                <br>
+                                <input type="radio" name="q32" value="b">
+                                b. Oxygen
+                                <br>
+                                <input type="radio" name="q32" value="c">
+                                c. Carbon
+                                <br>
+                                <input type="radio" name="q32" value="d">
+                                d. Hydrogen
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 33 -->
+                            <li>
+                                <label>What is the pH scale used to measure?</label>
+                                <br>
+                                <input type="radio" name="q33" value="a">
+                                a. Density of liquids
+                                <br>
+                                <input type="radio" name="q33" value="b">
+                                b. Acidity or alkalinity of solutions
+                                <br>
+                                <input type="radio" name="q33" value="c">
+                                c. Temperature of substances
+                                <br>
+                                <input type="radio" name="q33" value="d">
+                                d. Atomic mass of elements
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 34 -->
+                            <li>
+                                <label>What is the chemical formula for water?</label>
+                                <br>
+                                <input type="radio" name="q34" value="a">
+                                a. H2O2
+                                <br>
+                                <input type="radio" name="q34" value="b">
+                                b. CO2
+                                <br>
+                                <input type="radio" name="q34" value="c">
+                                c. H2O
+                                <br>
+                                <input type="radio" name="q34" value="d">
+                                d. O2H
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions -->
+                            <!-- Question 35 -->
+                            <li>
+                                <label>Define a chemical reaction.</label>
+                                <br>
+                                <input type="radio" name="q35" value="a">
+                                a. A process that changes the physical state of a substance without altering its chemical composition.
+                                <br>
+                                <input type="radio" name="q35" value="b">
+                                b. A process that changes the chemical composition of a substance, resulting in the formation of new substances.
+                                <br>
+                                <input type="radio" name="q35" value="c">
+                                c. A process that involves only physical changes and no chemical changes.
+                                <br>
+                                <input type="radio" name="q35" value="d">
+                                d. A process that removes all chemical properties of a substance.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 36 -->
+                            <li>
+                                <label>What is the atomic number of carbon?</label>
+                                <br>
+                                <input type="radio" name="q36" value="a">
+                                a. 4
+                                <br>
+                                <input type="radio" name="q36" value="b">
+                                b. 8
+                                <br>
+                                <input type="radio" name="q36" value="c">
+                                c. 12
+                                <br>
+                                <input type="radio" name="q36" value="d">
+                                d. 6
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 37 -->
+                            <li>
+                                <label>What is the chemical formula for methane, a common natural gas?</label>
+                                <br>
+                                <input type="radio" name="q37" value="a">
+                                a. CH4
+                                <br>
+                                <input type="radio" name="q37" value="b">
+                                b. CO2
+                                <br>
+                                <input type="radio" name="q37" value="c">
+                                c. H2O
+                                <br>
+                                <input type="radio" name="q37" value="d">
+                                d. C2H6
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions -->
+                            <!-- Question 38 -->
+                            <li>
+                                <label>Describe the difference between an exothermic and an endothermic chemical reaction.</label>
+                                <br>
+                                <input type="radio" name="q38" value="a">
+                                a. An exothermic reaction releases heat, while an endothermic reaction absorbs heat.
+                                <br>
+                                <input type="radio" name="q38" value="b">
+                                b. An exothermic reaction absorbs heat, while an endothermic reaction releases heat.
+                                <br>
+                                <input type="radio" name="q38" value="c">
+                                c. Exothermic and endothermic reactions have the same characteristics.
+                                <br>
+                                <input type="radio" name="q38" value="d">
+                                d. Exothermic reactions only occur in liquids, while endothermic reactions only occur in gases.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 39 -->
+                            <li>
+                                <label>What is Avogadro's number, and how is it related to the mole in chemistry?</label>
+                                <br>
+                                <input type="radio" name="q39" value="a">
+                                a. Avogadro's number is the number of molecules in one mole of a substance, approximately 6.022 × 10^23.
+                                <br>
+                                <input type="radio" name="q39" value="b">
+                                b. Avogadro's number is the number of atoms in one mole of a substance, approximately 6.022 × 10^23.
+                                <br>
+                                <input type="radio" name="q39" value="c">
+                                c. Avogadro's number is the mass of one mole of an element.
+                                <br>
+                                <input type="radio" name="q39" value="d">
+                                d. Avogadro's number is unrelated to the concept of moles in chemistry.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 40 -->
+                            <li>
+                                <label>Explain the concept of electronegativity and how it affects chemical bonding.</label>
+                                <br>
+                                <input type="radio" name="q40" value="a">
+                                a. Electronegativity is the ability of an atom to attract electrons in a chemical bond. It influences the type of chemical bonding that occurs, such as ionic or covalent bonding.
+                                <br>
+                                <input type="radio" name="q40" value="b">
+                                b. Electronegativity is the ability of an atom to repel electrons in a chemical bond, leading to the formation of polar covalent bonds.
+                                <br>
+                                <input type="radio" name="q40" value="c">
+                                c. Electronegativity has no effect on chemical bonding.
+                                <br>
+                                <input type="radio" name="q40" value="d">
+                                d. Electronegativity is related to the color of elements in the periodic table.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 41 -->
+                            <li>
+                                <label>Describe the concept of stoichiometry in chemistry and how it is applied in chemical equations.</label>
+                                <br>
+                                <input type="radio" name="q41" value="a">
+                                a. Stoichiometry is the study of the ratios of reactants and products in a chemical reaction. It is used to balance chemical equations and calculate reactant and product quantities.
+                                <br>
+                                <input type="radio" name="q41" value="b">
+                                b. Stoichiometry is the study of the shapes of molecules in chemistry.
+                                <br>
+                                <input type="radio" name="q41" value="c">
+                                c. Stoichiometry is a branch of physics unrelated to chemistry.
+                                <br>
+                                <input type="radio" name="q41" value="d">
+                                d. Stoichiometry is the measurement of temperature changes in chemical reactions.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 42 -->
+                            <li>
+                                <label>Explain the differences between ionic and covalent compounds, including their bonding and properties.</label>
+                                <br>
+                                <input type="radio" name="q42" value="a">
+                                a. Ionic compounds form through the transfer of electrons between atoms and have high melting and boiling points, while covalent compounds form through the sharing of electrons and have lower melting and boiling points.
+                                <br>
+                                <input type="radio" name="q42" value="b">
+                                b. Ionic compounds form through the sharing of electrons between atoms and have low melting and boiling points, while covalent compounds form through the transfer of electrons and have high melting and boiling points.
+                                <br>
+                                <input type="radio" name="q42" value="c">
+                                c. Ionic and covalent compounds have identical properties.
+                                <br>
+                                <input type="radio" name="q42" value="d">
+                                d. Ionic and covalent compounds are not found in nature.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 43 -->
+                            <li>
+                                <label>Define the terms "endothermic" and "exothermic" in the context of chemical reactions and provide examples of each.</label>
+                                <br>
+                                <input type="radio" name="q43" value="a">
+                                a. Endothermic reactions absorb heat from their surroundings and typically feel cold, such as ice melting. Exothermic reactions release heat to their surroundings and typically feel warm, like combustion.
+                                <br>
+                                <input type="radio" name="q43" value="b">
+                                b. Endothermic reactions release heat, while exothermic reactions absorb heat.
+                                <br>
+                                <input type="radio" name="q43" value="c">
+                                c. Endothermic reactions involve only solids, while exothermic reactions involve gases.
+                                <br>
+                                <input type="radio" name="q43" value="d">
+                                d. Endothermic and exothermic reactions have the same properties.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 44 -->
+                            <li>
+                                <label>Explain the concept of oxidation and reduction in chemical reactions and their role in redox reactions.</label>
+                                <br>
+                                <input type="radio" name="q44" value="a">
+                                a. Oxidation is the loss of electrons, while reduction is the gain of electrons. In redox reactions, one substance is oxidized (loses electrons) while another is reduced (gains electrons).
+                                <br>
+                                <input type="radio" name="q44" value="b">
+                                b. Oxidation is the gain of electrons, while reduction is the loss of electrons. Redox reactions involve the exchange of electrons.
+                                <br>
+                                <input type="radio" name="q44" value="c">
+                                c. Oxidation and reduction are unrelated to redox reactions.
+                                <br>
+                                <input type="radio" name="q44" value="d">
+                                d. Oxidation and reduction are the same process.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 45 -->
+                            <li>
+                                <label>Describe the concept of hybridization in organic chemistry and its role in the formation of covalent bonds.</label>
+                                <br>
+                                <input type="radio" name="q45" value="a">
+                                a. Hybridization is the mixing of atomic orbitals to form new hybrid orbitals with different shapes. It allows for the formation of strong covalent bonds in molecules.
+                                <br>
+                                <input type="radio" name="q45" value="b">
+                                b. Hybridization is the process of converting liquids into gases in chemical reactions.
+                                <br>
+                                <input type="radio" name="q45" value="c">
+                                c. Hybridization is the creation of ionic bonds between atoms in organic compounds.
+                                <br>
+                                <input type="radio" name="q45" value="d">
+                                d. Hybridization is unrelated to covalent bonds.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <br>
+                        <h3>Biology Quiz</h3>
+                        <br>
+                        <ol>
+                            <!-- Easy Questions: (1 mark each) -->
+                            <!-- Question 46 -->
+                            <li>
+                                <label>What is the powerhouse of the cell responsible for producing energy?</label>
+                                <br>
+                                <input type="radio" name="q46" value="a">
+                                a. Nucleus
+                                <br>
+                                <input type="radio" name="q46" value="b">
+                                b. Chloroplast
+                                <br>
+                                <input type="radio" name="q46" value="c">
+                                c. Mitochondrion
+                                <br>
+                                <input type="radio" name="q46" value="d">
+                                d. Ribosome
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 47 -->
+                            <li>
+                                <label>Which gas do plants absorb from the atmosphere during photosynthesis?</label>
+                                <br>
+                                <input type="radio" name="q47" value="a">
+                                a. Oxygen
+                                <br>
+                                <input type="radio" name="q47" value="b">
+                                b. Nitrogen
+                                <br>
+                                <input type="radio" name="q47" value="c">
+                                c. Carbon dioxide
+                                <br>
+                                <input type="radio" name="q47" value="d">
+                                d. Hydrogen
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 48 -->
+                            <li>
+                                <label>What is the largest organ in the human body?</label>
+                                <br>
+                                <input type="radio" name="q48" value="a">
+                                a. Brain
+                                <br>
+                                <input type="radio" name="q48" value="b">
+                                b. Liver
+                                <br>
+                                <input type="radio" name="q48" value="c">
+                                c. Skin
+                                <br>
+                                <input type="radio" name="q48" value="d">
+                                d. Heart
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 49 -->
+                            <li>
+                                <label>What is the basic unit of heredity in living organisms?</label>
+                                <br>
+                                <input type="radio" name="q49" value="a">
+                                a. Protein
+                                <br>
+                                <input type="radio" name="q49" value="b">
+                                b. Carbohydrate
+                                <br>
+                                <input type="radio" name="q49" value="c">
+                                c. Gene
+                                <br>
+                                <input type="radio" name="q49" value="d">
+                                d. Enzyme
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions: (2 marks each) -->
+                            <!-- Question 50 -->
+                            <li>
+                                <label>Describe the process of osmosis and its significance in biology.</label>
+                                <br>
+                                <input type="radio" name="q50" value="a">
+                                a. Osmosis is the movement of water molecules from an area of lower concentration to an area of higher concentration through a semipermeable membrane. It is essential for maintaining water balance in cells.
+                                <br>
+                                <input type="radio" name="q50" value="b">
+                                b. Osmosis is the movement of solute molecules from an area of higher concentration to an area of lower concentration through a semipermeable membrane. It regulates temperature in cells.
+                                <br>
+                                <input type="radio" name="q50" value="c">
+                                c. Osmosis is the release of oxygen by plants during photosynthesis. It provides oxygen for respiration.
+                                <br>
+                                <input type="radio" name="q50" value="d">
+                                d. Osmosis is the synthesis of glucose during cellular respiration.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 51 -->
+                            <li>
+                                <label>What is the function of red blood cells in the human body?</label>
+                                <br>
+                                <input type="radio" name="q51" value="a">
+                                a. Transporting oxygen from the lungs to body tissues
+                                <br>
+                                <input type="radio" name="q51" value="b">
+                                b. Producing insulin to regulate blood sugar levels
+                                <br>
+                                <input type="radio" name="q51" value="c">
+                                c. Filtering waste products from the blood
+                                <br>
+                                <input type="radio" name="q51" value="d">
+                                d. Digesting food in the stomach
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 52 -->
+                            <li>
+                                <label>Define biodiversity and explain its importance in ecosystems.</label>
+                                <br>
+                                <input type="radio" name="q52" value="a">
+                                a. Biodiversity refers to the variety of plant species in an ecosystem. It is essential for soil health.
+                                <br>
+                                <input type="radio" name="q52" value="b">
+                                b. Biodiversity refers to the variety of life forms, including species diversity, genetic diversity, and ecosystem diversity, in an ecosystem. It contributes to ecosystem stability, resilience, and productivity.
+                                <br>
+                                <input type="radio" name="q52" value="c">
+                                c. Biodiversity refers to the number of predators in an ecosystem. It helps control the population of herbivores.
+                                <br>
+                                <input type="radio" name="q52" value="d">
+                                d. Biodiversity refers to the variety of rocks and minerals in an ecosystem. It plays a role in geological processes.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 53 -->
+                            <li>
+                                <label>Explain the differences between mitosis and meiosis in cell division, including their outcomes and significance.</label>
+                                <br>
+                                <input type="radio" name="q53" value="a">
+                                a. Mitosis is a type of cell division that results in two identical daughter cells, used for growth and repair. Meiosis is a specialized cell division that produces four non-identical daughter cells, used in the formation of gametes (sperm and egg cells).
+                                <br>
+                                <input type="radio" name="q53" value="b">
+                                b. Mitosis and meiosis are identical processes with no differences in outcomes or significance.
+                                <br>
+                                <input type="radio" name="q53" value="c">
+                                c. Mitosis results in the formation of haploid cells, while meiosis results in the formation of diploid cells.
+                                <br>
+                                <input type="radio" name="q53" value="d">
+                                d. Mitosis is asexual reproduction, while meiosis is sexual reproduction.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 54 -->
+                            <li>
+                                <label>What is the role of enzymes in biological reactions, and how do they achieve specificity?</label>
+                                <br>
+                                <input type="radio" name="q54" value="a">
+                                a. Enzymes are catalysts that speed up chemical reactions in living organisms. They achieve specificity through their unique three-dimensional shapes that match specific substrates.
+                                <br>
+                                <input type="radio" name="q54" value="b">
+                                b. Enzymes are molecules that consume energy in biological reactions. They achieve specificity through random collisions with substrates.
+                                <br>
+                                <input type="radio" name="q54" value="c">
+                                c. Enzymes are responsible for maintaining pH balance in cells. They achieve specificity through ion exchange.
+                                <br>
+                                <input type="radio" name="q54" value="d">
+                                d. Enzymes are responsible for maintaining temperature in cells. They achieve specificity through temperature-dependent reactions.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 55 -->
+                            <li>
+                                <label>Describe the process of natural selection and its role in evolution.</label>
+                                <br>
+                                <input type="radio" name="q55" value="a">
+                                a. Natural selection is the process by which individuals with favorable traits are more likely to survive and reproduce, passing those traits to the next generation. It is the driving force behind evolution.
+                                <br>
+                                <input type="radio" name="q55" value="b">
+                                b. Natural selection is the process by which all individuals in a population survive and reproduce equally. It leads to the preservation of existing traits with no change over time.
+                                <br>
+                                <input type="radio" name="q55" value="c">
+                                c. Natural selection is the process by which the environment selects the traits it wants to see in a species. It has no role in evolution.
+                                <br>
+                                <input type="radio" name="q55" value="d">
+                                d. Natural selection is the process by which species adapt to their environment through genetic engineering.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 56 -->
+                            <li>
+                                <label>Explain the process of transcription and translation in the central dogma of molecular biology.</label>
+                                <br>
+                                <input type="radio" name="q56" value="a">
+                                a. Transcription is the synthesis of RNA from DNA, while translation is the conversion of RNA into protein. These processes are essential for gene expression.
+                                <br>
+                                <input type="radio" name="q56" value="b">
+                                b. Transcription is the conversion of DNA into RNA, while translation is the synthesis of DNA from RNA. They have no significance in biology.
+                                <br>
+                                <input type="radio" name="q56" value="c">
+                                c. Transcription is the synthesis of DNA from RNA, while translation is the conversion of RNA into protein. They occur simultaneously in cells.
+                                <br>
+                                <input type="radio" name="q56" value="d">
+                                d. Transcription and translation are unrelated processes in molecular biology.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 57 -->
+                            <li>
+                                <label>Describe the nitrogen cycle in ecosystems and its importance in maintaining a balanced environment.</label>
+                                <br>
+                                <input type="radio" name="q57" value="a">
+                                a. The nitrogen cycle is the process by which nitrogen compounds are converted into various forms by bacteria and returned to the environment. It is crucial for nitrogen fixation and the growth of plants.
+                                <br>
+                                <input type="radio" name="q57" value="b">
+                                b. The nitrogen cycle is the process by which nitrogen compounds are removed from the environment. It has no significance in ecosystems.
+                                <br>
+                                <input type="radio" name="q57" value="c">
+                                c. The nitrogen cycle is the process by which carbon is converted into nitrogen in ecosystems. It contributes to climate change.
+                                <br>
+                                <input type="radio" name="q57" value="d">
+                                d. The nitrogen cycle is the process by which oxygen is converted into nitrogen in ecosystems. It is important for respiration.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 58 -->
+                            <li>
+                                <label>Explain the structure and function of the cell membrane, including the roles of phospholipids and membrane proteins.</label>
+                                <br>
+                                <input type="radio" name="q58" value="a">
+                                a. The cell membrane consists of a phospholipid bilayer with embedded proteins. Phospholipids create a selective barrier, while membrane proteins facilitate transport and cell recognition.
+                                <br>
+                                <input type="radio" name="q58" value="b">
+                                b. The cell membrane is composed of a single layer of phospholipids. It prevents the passage of all substances into and out of the cell.
+                                <br>
+                                <input type="radio" name="q58" value="c">
+                                c. The cell membrane is composed of a rigid protein matrix. It provides structural support to the cell.
+                                <br>
+                                <input type="radio" name="q58" value="d">
+                                d. The cell membrane is composed of nucleic acids. It stores genetic information in the cell.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 59 -->
+                            <li>
+                                <label>Discuss the concept of homeostasis in biological systems and provide examples of how it is maintained in the human body.</label>
+                                <br>
+                                <input type="radio" name="q59" value="a">
+                                a. Homeostasis is the maintenance of a stable internal environment in the face of changing external conditions. Examples include temperature regulation through sweating and blood glucose regulation through insulin and glucagon.
+                                <br>
+                                <input type="radio" name="q59" value="b">
+                                b. Homeostasis is the ability of organisms to maintain a stable external environment. Examples include plant adaptations to drought conditions.
+                                <br>
+                                <input type="radio" name="q59" value="c">
+                                c. Homeostasis is the ability of organisms to survive extreme environmental changes. Examples include hibernation in animals.
+                                <br>
+                                <input type="radio" name="q59" value="d">
+                                d. Homeostasis is a concept unrelated to biology.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 60 -->
+                            <li>
+                                <label>Discuss the role of feedback mechanisms in maintaining homeostasis in the human body, using the example of temperature regulation.</label>
+                                <br>
+                                <input type="radio" name="q60" value="a">
+                                a. Feedback mechanisms are processes that disrupt homeostasis and lead to disease. They have no role in maintaining stability.
+                                <br>
+                                <input type="radio" name="q60" value="b">
+                                b. Feedback mechanisms are processes that amplify changes and cause rapid fluctuations in body temperature. They are essential for survival.
+                                <br>
+                                <input type="radio" name="q60" value="c">
+                                c. Feedback mechanisms are processes that maintain stability by detecting deviations from a set point and initiating responses to correct them. In temperature regulation, negative feedback mechanisms are used to maintain a constant internal temperature.
+                                <br>
+                                <input type="radio" name="q60" value="d">
+                                d. Feedback mechanisms are unrelated to homeostasis.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <h3>Arts and Humanities Quiz</h3>
+                        <br>
+                        <ol>
+                            <!-- Easy Questions: (1 marks each) -->
+                            <!-- Question 61 -->
+                            <li>
+                                <label>Who is the author of the famous novel "To Kill a Mockingbird"?</label>
+                                <br>
+                                <input type="radio" name="q61" value="a">
+                                a. F. Scott Fitzgerald
+                                <br>
+                                <input type="radio" name="q61" value="b">
+                                b. Harper Lee
+                                <br>
+                                <input type="radio" name="q61" value="c">
+                                c. J.K. Rowling
+                                <br>
+                                <input type="radio" name="q61" value="d">
+                                d. George Orwell
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 62 -->
+                            <li>
+                                <label>What artistic movement is known for its use of bold colors and geometric shapes, often associated with Pablo Picasso?</label>
+                                <br>
+                                <input type="radio" name="q62" value="a">
+                                a. Impressionism
+                                <br>
+                                <input type="radio" name="q62" value="b">
+                                b. Cubism
+                                <br>
+                                <input type="radio" name="q62" value="c">
+                                c. Surrealism
+                                <br>
+                                <input type="radio" name="q62" value="d">
+                                d. Realism
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 63 -->
+                            <li>
+                                <label>Who wrote the play "Romeo and Juliet"?</label>
+                                <br>
+                                <input type="radio" name="q63" value="a">
+                                a. Charles Dickens
+                                <br>
+                                <input type="radio" name="q63" value="b">
+                                b. William Shakespeare
+                                <br>
+                                <input type="radio" name="q63" value="c">
+                                c. Jane Austen
+                                <br>
+                                <input type="radio" name="q63" value="d">
+                                d. Leo Tolstoy
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 64 -->
+                            <li>
+                                <label>Which ancient civilization is famous for its contributions to philosophy, including the teachings of Socrates, Plato, and Aristotle?</label>
+                                <br>
+                                <input type="radio" name="q64" value="a">
+                                a. Egyptian civilization
+                                <br>
+                                <input type="radio" name="q64" value="b">
+                                b. Mesopotamian civilization
+                                <br>
+                                <input type="radio" name="q64" value="c">
+                                c. Greek civilization
+                                <br>
+                                <input type="radio" name="q64" value="d">
+                                d. Roman civilization
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions: (2 marks each) -->
+                            <!-- Question 65 -->
+                            <li>
+                                <label>In which period of art history is the Mona Lisa painted, and who is the artist?</label>
+                                <br>
+                                <input type="radio" name="q65" value="a">
+                                a. Renaissance, Leonardo da Vinci
+                                <br>
+                                <input type="radio" name="q65" value="b">
+                                b. Baroque, Michelangelo
+                                <br>
+                                <input type="radio" name="q65" value="c">
+                                c. Neoclassicism, Vincent van Gogh
+                                <br>
+                                <input type="radio" name="q65" value="d">
+                                d. Romanticism, Pablo Picasso
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 66 -->
+                            <li>
+                                <label>Who is often referred to as the "father of modern physics" and is known for his theory of relativity?</label>
+                                <br>
+                                <input type="radio" name="q66" value="a">
+                                a. Isaac Newton
+                                <br>
+                                <input type="radio" name="q66" value="b">
+                                b. Charles Darwin
+                                <br>
+                                <input type="radio" name="q66" value="c">
+                                c. Albert Einstein
+                                <br>
+                                <input type="radio" name="q66" value="d">
+                                d. Niels Bohr
+                                <br>
+                            </li>
+                            <!-- Question 67 -->
+                            <li>
+                                <label>What is the historical significance of the Magna Carta?</label>
+                                <br>
+                                <input type="radio" name="q67" value="a">
+                                a. It was the first constitution of the United States.
+                                <br>
+                                <input type="radio" name="q67" value="b">
+                                b. It established the principles of democracy in ancient Greece.
+                                <br>
+                                <input type="radio" name="q67" value="c">
+                                c. It limited the power of the English monarchy and laid the foundation for constitutional government.
+                                <br>
+                                <input type="radio" name="q67" value="d">
+                                d. It was a treaty signed between France and Germany during World War I.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 68 -->
+                            <li>
+                                <label>Describe the major themes in the works of the French existentialist philosopher Jean-Paul Sartre.</label>
+                                <br>
+                                <input type="radio" name="q68" value="a">
+                                a. Sartre's major themes include existential freedom, absurdity, and the responsibility of individuals to create their own meaning in a seemingly meaningless world.
+                                <br>
+                                <input type="radio" name="q68" value="b">
+                                b. Sartre focused on the concept of utopia and the ideal society.
+                                <br>
+                                <input type="radio" name="q68" value="c">
+                                c. Sartre primarily explored the nature of mathematical logic and its applications in philosophy.
+                                <br>
+                                <input type="radio" name="q68" value="d">
+                                d. Sartre's works mainly revolved around the concept of determinism in human behavior.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 69 -->
+                            <li>
+                                <label>Discuss the impact of the Harlem Renaissance on American literature and culture.</label>
+                                <br>
+                                <input type="radio" name="q69" value="a">
+                                a. The Harlem Renaissance was a cultural and artistic movement in the early 20th century that celebrated African American culture, including literature, music, and visual arts. It significantly contributed to the recognition of African American artists and their contributions to American culture.
+                                <br>
+                                <input type="radio" name="q69" value="b">
+                                b. The Harlem Renaissance primarily focused on European art and had minimal impact on American culture.
+                                <br>
+                                <input type="radio" name="q69" value="c">
+                                c. The Harlem Renaissance promoted isolationism and separatism within the African American community.
+                                <br>
+                                <input type="radio" name="q69" value="d">
+                                d. The Harlem Renaissance was a political movement advocating for African American rights, unrelated to literature and culture.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 70 -->
+                            <li>
+                                <label>What is postmodernism in art and literature, and how does it differ from modernism?</label>
+                                <br>
+                                <input type="radio" name="q70" value="a">
+                                a. Postmodernism is characterized by a skepticism towards grand narratives, a blurring of boundaries between high and low culture, and a focus on irony and pastiche. It contrasts with modernism, which often sought to establish new artistic forms and meanings.
+                                <br>
+                                <input type="radio" name="q70" value="b">
+                                b. Postmodernism is an extension of modernism and shares the same principles and values.
+                                <br>
+                                <input type="radio" name="q70" value="c">
+                                c. Postmodernism is synonymous with traditionalism and a return to classical art and literature.
+                                <br>
+                                <input type="radio" name="q70" value="d">
+                                d. Postmodernism is a term used exclusively in architecture and has no relevance in other forms of art and literature.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 71 -->
+                            <li>
+                                <label>Analyze the concept of the "hero's journey" in literature, citing examples from classic and contemporary works.</label>
+                                <br>
+                                <input type="radio" name="q71" value="a">
+                                a. The hero's journey is a narrative pattern where a protagonist embarks on an adventure, faces challenges, undergoes transformation, and returns changed. Examples include Odysseus in "The Odyssey" and Harry Potter in the "Harry Potter" series.
+                                <br>
+                                <input type="radio" name="q71" value="b">
+                                b. The hero's journey is a recent literary theory with no historical precedent in classical literature.
+                                <br>
+                                <input type="radio" name="q71" value="c">
+                                c. The hero's journey only applies to mythological narratives and has no relevance in contemporary literature.
+                                <br>
+                                <input type="radio" name="q71" value="d">
+                                d. The hero's journey is limited to science fiction and fantasy genres and is not found in other literary genres.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 72 -->
+                            <li>
+                                <label>Explain the major philosophical contributions of Friedrich Nietzsche and how they influenced modern thought.</label>
+                                <br>
+                                <input type="radio" name="q72" value="a">
+                                a. Nietzsche's philosophy challenged traditional morality and values, emphasizing the will to power, the Übermensch (overman or superman), and the idea that individuals should create their own values. His ideas had a profound impact on existentialism and postmodernism.
+                                <br>
+                                <input type="radio" name="q72" value="b">
+                                b. Nietzsche's philosophy focused on metaphysics and had little influence on modern thought.
+                                <br>
+                                <input type="radio" name="q72" value="c">
+                                c. Nietzsche's philosophy advocated for a return to traditional values and morality.
+                                <br>
+                                <input type="radio" name="q72" value="d">
+                                d. Nietzsche's philosophy primarily dealt with aesthetics and had no impact on modern thought.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 73 -->
+                            <li>
+                                <label>Discuss the impact of the feminist movement on literature and the arts in the 20th century, highlighting key figures and works.</label>
+                                <br>
+                                <input type="radio" name="q73" value="a">
+                                a. The feminist movement in the 20th century challenged traditional gender roles and paved the way for a wave of feminist literature and art. Key figures include Virginia Woolf, Simone de Beauvoir, and the feminist artists of the Guerrilla Girls.
+                                <br>
+                                <input type="radio" name="q73" value="b">
+                                b. The feminist movement had no impact on literature and the arts in the 20th century.
+                                <br>
+                                <input type="radio" name="q73" value="c">
+                                c. The feminist movement exclusively focused on political activism and had no influence on cultural production.
+                                <br>
+                                <input type="radio" name="q73" value="d">
+                                d. The feminist movement primarily advocated for women's suffrage and had no bearing on literature and the arts.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 74 -->
+                            <li>
+                                <label>Define the concept of cultural relativism in anthropology and its implications for understanding diverse societies.</label>
+                                <br>
+                                <input type="radio" name="q74" value="a">
+                                a. Cultural relativism is the idea that all cultural practices and beliefs should be understood within their own cultural context, without judgment or comparison to one's own culture. It promotes tolerance and respect for cultural diversity.
+                                <br>
+                                <input type="radio" name="q74" value="b">
+                                b. Cultural relativism is the belief that one's own culture is superior to others and should be imposed on them.
+                                <br>
+                                <input type="radio" name="q74" value="c">
+                                c. Cultural relativism is a concept unrelated to anthropology.
+                                <br>
+                                <input type="radio" name="q74" value="d">
+                                d. Cultural relativism is the idea that all cultures should be judged based on a universal set of values and norms.
+                                <br>
+                            </li>
+                            <br>
+                            <li>
+                                <label>Define the concept of "Ahimsa" in Indian philosophy and its influence on leaders like Mahatma Gandhi in the struggle for independence.</label>
+                                <br>
+                                <input type="radio" name="q75" value="a">
+                                a. "Ahimsa" is the principle of non-violence and compassion towards all living beings. Mahatma Gandhi adopted this philosophy as a central tenet of the Indian independence movement, using non-violent civil disobedience to achieve social and political change.
+                                <br>
+                                <input type="radio" name="q75" value="b">
+                                b. "Ahimsa" is the pursuit of military power and had no role in the struggle for independence.
+                                <br>
+                                <input type="radio" name="q75" value="c">
+                                c. "Ahimsa" is the pursuit of personal enlightenment and had no impact on political movements.
+                                <br>
+                                <input type="radio" name="q75" value="d">
+                                d. "Ahimsa" is the pursuit of material wealth and had no relevance to Indian history.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <h3>Arts and Humanities Quiz</h3>
+                        <br>
+                        <!-- Easy Questions: (1 mark each) -->
+                        <ol>
+                            <!-- Question 76 -->
+                            <li>
+                                <label>What is the highest court in India, responsible for interpreting the Indian Constitution?</label>
+                                <br>
+                                <input type="radio" name="q76" value="a">
+                                a. Supreme Court
+                                <br>
+                                <input type="radio" name="q76" value="b">
+                                b. High Court
+                                <br>
+                                <input type="radio" name="q76" value="c">
+                                c. District Court
+                                <br>
+                                <input type="radio" name="q76" value="d">
+                                d. Magistrate Court
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 77 -->
+                            <li>
+                                <label>What is the term for a legal document that allows law enforcement agencies to search a person's premises or seize their property?</label>
+                                <br>
+                                <input type="radio" name="q77" value="a">
+                                a. Warrant
+                                <br>
+                                <input type="radio" name="q77" value="b">
+                                b. Summons
+                                <br>
+                                <input type="radio" name="q77" value="c">
+                                c. Affidavit
+                                <br>
+                                <input type="radio" name="q77" value="d">
+                                d. Injunction
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 78 -->
+                            <li>
+                                <label>In criminal cases, what does the term "bail" refer to?</label>
+                                <br>
+                                <input type="radio" name="q78" value="a">
+                                a. A monetary fine imposed on the accused.
+                                <br>
+                                <input type="radio" name="q78" value="b">
+                                b. Temporary release of an accused person pending trial, often with certain conditions.
+                                <br>
+                                <input type="radio" name="q78" value="c">
+                                c. Acquittal of the accused without a trial.
+                                <br>
+                                <input type="radio" name="q78" value="d">
+                                d. A legal objection raised by the defense attorney.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 79 -->
+                            <li>
+                                <label>Who is a legal professional in India representing clients in court and providing legal advice?</label>
+                                <br>
+                                <input type="radio" name="q79" value="a">
+                                a. Judge
+                                <br>
+                                <input type="radio" name="q79" value="b">
+                                b. Prosecutor
+                                <br>
+                                <input type="radio" name="q79" value="c">
+                                c. Advocate
+                                <br>
+                                <input type="radio" name="q79" value="d">
+                                d. Witness
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions: (2 marks each) -->
+                            <!-- Question 80 -->
+                            <li>
+                                <label>Explain the concept of "Public Interest Litigation (PIL)" in the Indian legal system and its significance.</label>
+                                <br>
+                                <input type="radio" name="q80" value="a">
+                                a. Public Interest Litigation (PIL) is a legal action initiated by an individual or organization to protect the rights and interests of the public or a marginalized group. It allows citizens to seek judicial intervention in matters of public concern.
+                                <br>
+                                <input type="radio" name="q80" value="b">
+                                b. PIL is a legal action initiated by the government to prosecute individuals involved in corruption.
+                                <br>
+                                <input type="radio" name="q80" value="c">
+                                c. PIL is a legal action that can only be filed by political parties, not by individual citizens.
+                                <br>
+                                <input type="radio" name="q80" value="d">
+                                d. PIL is a legal action aimed at protecting the rights of corporations and businesses.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 81 -->
+                            <li>
+                                <label>What is the difference between a civil case and a criminal case in the Indian legal system?</label>
+                                <br>
+                                <input type="radio" name="q81" value="a">
+                                a. In a civil case, the government prosecutes individuals for violating the law, while in a criminal case, one party sues another for monetary damages.
+                                <br>
+                                <input type="radio" name="q81" value="b">
+                                b. In a civil case, the burden of proof is "beyond a reasonable doubt," while in a criminal case, it is "preponderance of the evidence."
+                                <br>
+                                <input type="radio" name="q81" value="c">
+                                c. In a civil case, the objective is to punish the defendant, while in a criminal case, the objective is to compensate the victim.
+                                <br>
+                                <input type="radio" name="q81" value="d">
+                                d. In a civil case, disputes between individuals or entities are resolved, while in a criminal case, offenses against society are prosecuted.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 82 -->
+                            <li>
+                                <label>What is the significance of Article 32 in the Indian Constitution?</label>
+                                <br>
+                                <input type="radio" name="q82" value="a">
+                                a. Article 32 allows the President to issue ordinances in the absence of Parliament.
+                                <br>
+                                <input type="radio" name="q82" value="b">
+                                b. Article 32 provides the right to Constitutional Remedies, allowing citizens to move the Supreme Court for the enforcement of fundamental rights.
+                                <br>
+                                <input type="radio" name="q82" value="c">
+                                c. Article 32 outlines the procedure for amending the Constitution.
+                                <br>
+                                <input type="radio" name="q82" value="d">
+                                d. Article 32 deals with the distribution of legislative powers between the Union and States.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 83 -->
+                            <li>
+                                <label>Discuss the principles of natural justice, including the rule against bias and the right to a fair hearing, in the Indian legal system.</label>
+                                <br>
+                                <input type="radio" name="q83" value="a">
+                                a. The principles of natural justice require that judicial and administrative proceedings be fair, unbiased, and conducted in accordance with established procedures. The rule against bias ensures that decision-makers are impartial, while the right to a fair hearing guarantees an opportunity for parties to present their case.
+                                <br>
+                                <input type="radio" name="q83" value="b">
+                                b. The principles of natural justice have no relevance in the Indian legal system.
+                                <br>
+                                <input type="radio" name="q83" value="c">
+                                c. The principles of natural justice only apply to criminal cases in India.
+                                <br>
+                                <input type="radio" name="q83" value="d">
+                                d. The principles of natural justice are solely concerned with economic regulations.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 84 -->
+                            <li>
+                                <label>Explain the concept of "judicial review" in India and its role in upholding the Constitution.</label>
+                                <br>
+                                <input type="radio" name="q84" value="a">
+                                a. Judicial review is the power of the judiciary to examine the constitutionality of legislative and executive actions. It ensures that laws and actions comply with the provisions of the Constitution, thus safeguarding the supremacy of the Constitution.
+                                <br>
+                                <input type="radio" name="q84" value="b">
+                                b. Judicial review is a process by which executive orders are reviewed by the President of India.
+                                <br>
+                                <input type="radio" name="q84" value="c">
+                                c. Judicial review only applies to state-level laws, not central laws.
+                                <br>
+                                <input type="radio" name="q84" value="d">
+                                d. Judicial review is limited to criminal cases in India.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 85 -->
+                            <li>
+                                <label>What is the "Doctrine of Separation of Powers" in the Indian context, and how does it operate within the government?</label>
+                                <br>
+                                <input type="radio" name="q85" value="a">
+                                a. The Doctrine of Separation of Powers is a fundamental principle of the Indian Constitution that divides the powers of the government into three branches: the Legislature, the Executive, and the Judiciary. Each branch has its distinct functions and responsibilities to prevent the concentration of power in a single authority.
+                                <br>
+                                <input type="radio" name="q85" value="b">
+                                b. The Doctrine of Separation of Powers allows the President to assume the role of the Prime Minister in certain situations.
+                                <br>
+                                <input type="radio" name="q85" value="c">
+                                c. The Doctrine of Separation of Powers is primarily concerned with the division of power between the Union and the States.
+                                <br>
+                                <input type="radio" name="q85" value="d">
+                                d. The Doctrine of Separation of Powers only applies to the central government, not state governments in India.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 86 -->
+                            <li>
+                                <label>Analyze the evolution of environmental jurisprudence in India and its role in environmental protection and sustainable development.</label>
+                                <br>
+                                <input type="radio" name="q86" value="a">
+                                a. Environmental jurisprudence in India has evolved to recognize environmental protection as a fundamental right and a duty of every citizen. It provides a framework for addressing environmental issues, promoting sustainable development, and holding authorities accountable for environmental degradation.
+                                <br>
+                                <input type="radio" name="q86" value="b">
+                                b. Environmental jurisprudence in India has had no significant impact on environmental protection or sustainable development.
+                                <br>
+                                <input type="radio" name="q86" value="c">
+                                c. Environmental jurisprudence in India primarily focuses on promoting industrial growth and economic development.
+                                <br>
+                                <input type="radio" name="q86" value="d">
+                                d. Environmental jurisprudence in India is limited to urban areas and does not address rural environmental issues.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 87 -->
+                            <li>
+                                <label>Discuss the concept of "Public Nuisance" in Indian law, providing examples of situations that may constitute public nuisances.</label>
+                                <br>
+                                <input type="radio" name="q87" value="a">
+                                a. Public nuisance refers to an unlawful act or omission that interferes with the rights of the public or a substantial section of it. Examples include air pollution, noise pollution, and obstructing a public road or path.
+                                <br>
+                                <input type="radio" name="q87" value="b">
+                                b. Public nuisance is a legal term with no practical applications in Indian law.
+                                <br>
+                                <input type="radio" name="q87" value="c">
+                                c. Public nuisance only applies to private property disputes.
+                                <br>
+                                <input type="radio" name="q87" value="d">
+                                d. Public nuisance is limited to cases of personal injury and does not cover environmental issues.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 88 -->
+                            <li>
+                                <label>Explain the concept of "Adverse Possession" under Indian law and the conditions required for a person to claim ownership of property through adverse possession.</label>
+                                <br>
+                                <input type="radio" name="q88" value="a">
+                                a. Adverse possession allows a person to claim ownership of another's property by openly and continuously occupying it for a specified period, typically 12 years, without the owner's permission. Conditions include possession in good faith, assertion of a hostile title, and uninterrupted possession.
+                                <br>
+                                <input type="radio" name="q88" value="b">
+                                b. Adverse possession is not recognized in Indian law.
+                                <br>
+                                <input type="radio" name="q88" value="c">
+                                c. Adverse possession requires the payment of fair market value for the property.
+                                <br>
+                                <input type="radio" name="q88" value="d">
+                                d. Adverse possession can be claimed after just five years of occupation, regardless of the circumstances.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 89 -->
+                            <li>
+                                <label>Discuss the concept of "Public Interest Litigation (PIL)" in the Indian legal system and its impact on social justice and human rights.</label>
+                                <br>
+                                <input type="radio" name="q89" value="a">
+                                a. Public Interest Litigation (PIL) in India allows individuals and organizations to file petitions on behalf of the public interest or marginalized groups. It has been instrumental in addressing various social justice and human rights issues, including environmental protection, labor rights, and access to education and healthcare.
+                                <br>
+                                <input type="radio" name="q89" value="b">
+                                b. PIL in India has had no significant impact on social justice or human rights.
+                                <br>
+                                <input type="radio" name="q89" value="c">
+                                c. PIL in India is primarily concerned with corporate interests and does not address social justice issues.
+                                <br>
+                                <input type="radio" name="q89" value="d">
+                                d. PIL in India is limited to urban areas and does not cover rural areas.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 90 -->
+                            <li>
+                                <label>Analyze the role of alternative dispute resolution mechanisms, such as mediation and arbitration, in the Indian legal system, and explain their advantages and limitations.</label>
+                                <br>
+                                <input type="radio" name="q90" value="a">
+                                a. Alternative dispute resolution mechanisms provide parties with alternatives to traditional litigation, offering advantages such as quicker resolutions, cost-effectiveness, and privacy. However, their effectiveness depends on the willingness of parties to cooperate.
+                                <br>
+                                <input type="radio" name="q90" value="b">
+                                b. Alternative dispute resolution mechanisms are not recognized in the Indian legal system.
+                                <br>
+                                <input type="radio" name="q90" value="c">
+                                c. Mediation and arbitration can only be used in criminal cases in India.
+                                <br>
+                                <input type="radio" name="q90" value="d">
+                                d. Alternative dispute resolution mechanisms are solely applicable to corporate disputes.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <h3>Commerce Quiz</h3>
+                        <br>
+                        <!-- Easy Questions: (1 mark each) -->
+                        <ol>
+                            <!-- Question 91 -->
+                            <li>
+                                <label>What is the primary regulatory body responsible for regulating the Chartered Accountancy profession in India?</label>
+                                <br>
+                                <input type="radio" name="q91" value="a">
+                                a. SEBI (Securities and Exchange Board of India)
+                                <br>
+                                <input type="radio" name="q91" value="b">
+                                b. RBI (Reserve Bank of India)
+                                <br>
+                                <input type="radio" name="q91" value="c">
+                                c. ICAI (Institute of Chartered Accountants of India)
+                                <br>
+                                <input type="radio" name="q91" value="d">
+                                d. NSE (National Stock Exchange)
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 92 -->
+                            <li>
+                                <label>Which financial statement provides information about a company's financial position at a specific point in time?</label>
+                                <br>
+                                <input type="radio" name="q92" value="a">
+                                a. Income Statement
+                                <br>
+                                <input type="radio" name="q92" value="b">
+                                b. Cash Flow Statement
+                                <br>
+                                <input type="radio" name="q92" value="c">
+                                c. Balance Sheet
+                                <br>
+                                <input type="radio" name="q92" value="d">
+                                d. Statement of Retained Earnings
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 93 -->
+                            <li>
+                                <label>What is the term for an accounting standard that prescribes the measurement and presentation of specific items in financial statements?</label>
+                                <br>
+                                <input type="radio" name="q93" value="a">
+                                a. Accounting Framework
+                                <br>
+                                <input type="radio" name="q93" value="b">
+                                b. Accounting Policy
+                                <br>
+                                <input type="radio" name="q93" value="c">
+                                c. Accounting Principle
+                                <br>
+                                <input type="radio" name="q93" value="d">
+                                d. Accounting Standard
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 94 -->
+                            <li>
+                                <label>What is the term for the process of systematically recording financial transactions of a business?</label>
+                                <br>
+                                <input type="radio" name="q94" value="a">
+                                a. Auditing
+                                <br>
+                                <input type="radio" name="q94" value="b">
+                                b. Budgeting
+                                <br>
+                                <input type="radio" name="q94" value="c">
+                                c. Accounting
+                                <br>
+                                <input type="radio" name="q94" value="d">
+                                d. Taxation
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Medium Questions: (2 marks each) -->
+                            <!-- Question 95 -->
+                            <li>
+                                <label>Explain the role of a Chartered Accountant in conducting a statutory audit of a company in India.</label>
+                                <br>
+                                <input type="radio" name="q95" value="a">
+                                a. A Chartered Accountant performs a statutory audit to express an opinion on the fairness of a company's financial statements. They examine the company's financial records, internal controls, and compliance with accounting standards and legal requirements.
+                                <br>
+                                <input type="radio" name="q95" value="b">
+                                b. A Chartered Accountant's role in a statutory audit is limited to preparing financial statements for the company.
+                                <br>
+                                <input type="radio" name="q95" value="c">
+                                c. A Chartered Accountant conducts a statutory audit only for government organizations, not for private companies.
+                                <br>
+                                <input type="radio" name="q95" value="d">
+                                d. A Chartered Accountant's role in a statutory audit is limited to tax compliance.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 96 -->
+                            <li>
+                                <label>What is the significance of the Goods and Services Tax (GST) in India, and how has it impacted the Chartered Accountancy profession?</label>
+                                <br>
+                                <input type="radio" name="q96" value="a">
+                                a. GST is a comprehensive indirect tax reform that has simplified the tax structure in India. Chartered Accountants play a crucial role in GST compliance, including registration, return filing, and advisory services to businesses.
+                                <br>
+                                <input type="radio" name="q96" value="b">
+                                b. GST has no impact on the Chartered Accountancy profession.
+                                <br>
+                                <input type="radio" name="q96" value="c">
+                                c. GST only applies to large corporations, so Chartered Accountants are not involved in its implementation.
+                                <br>
+                                <input type="radio" name="q96" value="d">
+                                d. GST is a direct tax, so Chartered Accountants do not deal with it.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 97 -->
+                            <li>
+                                <label>What is the primary objective of the Insolvency and Bankruptcy Code (IBC) in India, and how do Chartered Accountants contribute to the insolvency process?</label>
+                                <br>
+                                <input type="radio" name="q97" value="a">
+                                a. The IBC aims to consolidate and amend the laws relating to insolvency resolution. Chartered Accountants are involved as insolvency professionals who manage the resolution process, assess the financial position of the debtor, and facilitate the repayment of creditors.
+                                <br>
+                                <input type="radio" name="q97" value="b">
+                                b. The IBC is primarily concerned with corporate taxation, and Chartered Accountants have no role in it.
+                                <br>
+                                <input type="radio" name="q97" value="c">
+                                c. The IBC only applies to government-owned companies.
+                                <br>
+                                <input type="radio" name="q97" value="d">
+                                d. The IBC focuses on criminal law, so Chartered Accountants are not involved.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Difficult Questions: (4 marks each) -->
+                            <!-- Question 98 -->
+                            <li>
+                                <label>Discuss the concept of "Double Taxation Avoidance Agreements (DTAA)" in the context of international taxation and how Chartered Accountants assist multinational companies in dealing with DTAA.</label>
+                                <br>
+                                <input type="radio" name="q98" value="a">
+                                a. DTAA is an agreement between two countries to prevent double taxation of income earned in both countries by a taxpayer. Chartered Accountants help multinational companies understand and apply DTAA provisions, ensuring that income is taxed appropriately in each country.
+                                <br>
+                                <input type="radio" name="q98" value="b">
+                                b. DTAA has no relevance to international taxation, and Chartered Accountants are not involved in such matters.
+                                <br>
+                                <input type="radio" name="q98" value="c">
+                                c. DTAA is a unilateral decision made by individual countries without any international agreements.
+                                <br>
+                                <input type="radio" name="q98" value="d">
+                                d. DTAA applies only to individual taxpayers, not multinational companies.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 99 -->
+                            <li>
+                                <label>Explain the concept of "Accrual Accounting" versus "Cash Accounting," and discuss their relevance in financial reporting for businesses.</label>
+                                <br>
+                                <input type="radio" name="q99" value="a">
+                                a. Accrual Accounting recognizes revenue and expenses when they are earned or incurred, regardless of when cash is received or paid. Cash Accounting, on the other hand, records transactions only when cash changes hands. Accrual Accounting is considered more accurate for matching revenue and expenses.
+                                <br>
+                                <input type="radio" name="q99" value="b">
+                                b. Accrual Accounting is not used in financial reporting.
+                                <br>
+                                <input type="radio" name="q99" value="c">
+                                c. Cash Accounting is the standard method for financial reporting in India.
+                                <br>
+                                <input type="radio" name="q99" value="d">
+                                d. Accrual Accounting is used exclusively by government agencies.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 100 -->
+                            <li>
+                                <label>Describe the role of Chartered Accountants in forensic accounting and fraud detection in India, and provide an example of a high-profile fraud case where Chartered Accountants played a crucial role.</label>
+                                <br>
+                                <input type="radio" name="q100" value="a">
+                                a. Chartered Accountants in forensic accounting investigate financial irregularities, embezzlement, and fraud. They analyze financial records, conduct audits, and provide expert testimony in legal proceedings. An example is the Satyam Computer Services scandal, where Chartered Accountants exposed accounting fraud.
+                                <br>
+                                <input type="radio" name="q100" value="b">
+                                b. Chartered Accountants have no role in forensic accounting or fraud detection in India.
+                                <br>
+                                <input type="radio" name="q100" value="c">
+                                c. Forensic accounting is only used in criminal investigations, not corporate settings.
+                                <br>
+                                <input type="radio" name="q100" value="d">
+                                d. Chartered Accountants focus exclusively on tax-related matters.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 101 -->
+                            <li>
+                                <label>Analyze the impact of the recent changes in accounting standards, such as the adoption of Indian Accounting Standards (Ind AS), on businesses and the role of Chartered Accountants in facilitating the transition.</label>
+                                <br>
+                                <input type="radio" name="q101" value="a">
+                                a. The adoption of Ind AS has harmonized Indian accounting standards with international standards, leading to increased transparency and comparability. Chartered Accountants assist businesses in implementing these standards, ensuring compliance and accurate financial reporting.
+                                <br>
+                                <input type="radio" name="q101" value="b">
+                                b. Ind AS has had no significant impact on accounting practices in India.
+                                <br>
+                                <input type="radio" name="q101" value="c">
+                                c. Ind AS applies only to government-owned enterprises.
+                                <br>
+                                <input type="radio" name="q101" value="d">
+                                d. The adoption of Ind AS only affects the banking sector.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 102 -->
+                            <li>
+                                <label>Discuss the ethical responsibilities and code of conduct that Chartered Accountants in India are expected to adhere to, and explain the consequences of ethical violations in the profession.</label>
+                                <br>
+                                <input type="radio" name="q102" value="a">
+                                a. Chartered Accountants are expected to uphold a strict code of ethics, including integrity, objectivity, confidentiality, and professional behavior. Violations can result in disciplinary action by the ICAI, including suspension or removal from the profession.
+                                <br>
+                                <input type="radio" name="q102" value="b">
+                                b. Chartered Accountants have no specific ethical responsibilities.
+                                <br>
+                                <input type="radio" name="q102" value="c">
+                                c. Ethical violations by Chartered Accountants are subject to criminal prosecution but not professional consequences.
+                                <br>
+                                <input type="radio" name="q102" value="d">
+                                d. Ethical responsibilities apply only to senior Chartered Accountants, not to those in training.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 103 -->
+                            <li>
+                                <label>Explain the concept of "Transfer Pricing" in international taxation and the role of Chartered Accountants in helping multinational companies comply with transfer pricing regulations in India.</label>
+                                <br>
+                                <input type="radio" name="q103" value="a">
+                                a. Transfer Pricing involves pricing transactions between related entities in different countries to ensure that profits are appropriately allocated and taxed. Chartered Accountants play a critical role in setting transfer prices, documenting transactions, and ensuring compliance with Indian transfer pricing regulations.
+                                <br>
+                                <input type="radio" name="q103" value="b">
+                                b. Transfer Pricing has no relevance in international taxation.
+                                <br>
+                                <input type="radio" name="q103" value="c">
+                                c. Transfer Pricing applies only to small businesses and not to multinational corporations.
+                                <br>
+                                <input type="radio" name="q103" value="d">
+                                d. Transfer Pricing regulations do not exist in India.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 104 -->
+                            <li>
+                                <label>Analyze the impact of the recent changes in the Indian tax landscape, such as the introduction of the Goods and Services Tax (GST), on the role and responsibilities of Chartered Accountants in tax advisory and compliance services.</label>
+                                <br>
+                                <input type="radio" name="q104" value="a">
+                                a. The introduction of GST has transformed the tax landscape in India, requiring Chartered Accountants to provide GST advisory, return filing, and compliance services to businesses. They ensure accurate tax calculations and help businesses navigate complex GST regulations.
+                                <br>
+                                <input type="radio" name="q104" value="b">
+                                b. The introduction of GST has had no impact on the role of Chartered Accountants in tax advisory.
+                                <br>
+                                <input type="radio" name="q104" value="c">
+                                c. GST applies only to individual taxpayers, not businesses.
+                                <br>
+                                <input type="radio" name="q104" value="d">
+                                d. The introduction of GST has eliminated the need for Chartered Accountants in tax-related matters.
+                                <br>
+                            </li>
+                            <br>
+                            <!-- Question 105 -->
+                            <li>
+                                <label>Explain the concept of "IFRS Convergence" in the context of Indian accounting standards and its significance in the global business environment.</label>
+                                <br>
+                                <input type="radio" name="q105" value="a">
+                                a. IFRS Convergence refers to the process of aligning Indian accounting standards with International Financial Reporting Standards (IFRS). This convergence enhances the comparability of financial statements globally and facilitates cross-border investments and trade.
+                                <br>
+                                <input type="radio" name="q105" value="b">
+                                b. IFRS Convergence is not relevant to Indian accounting standards.
+                                <br>
+                                <input type="radio" name="q105" value="c">
+                                c. IFRS Convergence only applies to multinational corporations.
+                                <br>
+                                <input type="radio" name="q105" value="d">
+                                d. IFRS Convergence aims to replace Indian accounting standards entirely.
+                                <br>
+                            </li>
+                            <br>
+                        </ol>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <!-- Scripts -->
+                <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+                <!-- jQuery for Bootstrap's JavaScript plugins -->
+                <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+                <!-- Popper tooltip library for Bootstrap -->
+                <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+                <!-- Bootstrap framework -->
+                <script src="{{url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+                <!-- jQuery Easing for smooth scrolling between anchors -->
+                <script src="{{url_for('static',filename='js/swiper.min.js')}}"></script>
+                <!-- Swiper for image and text sliders -->
+                <script src="{{url_for('static',filename='js/validator.min.js')}}"></script>
+                <!-- Validator.js - Bootstrap plugin that validates forms -->
+                <script src="{{url_for('static',filename='js/scripts.js')}}"></script>
+                <!-- Custom scripts -->
+                <script src="{{url_for('static',filename='js/script1.js')}}"></script>
+                <!-- Custom Script -->
+            </body>
+        </html>
