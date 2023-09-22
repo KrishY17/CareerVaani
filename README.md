@@ -27,7 +27,7 @@ Career Prediction System
 -While Deep Learning models like Neural Networks handle complex data. 
 
 -These ML models, integrated into career counseling platforms, provide personalized guidance, 
- enabling students to make well-informed career decisions
+ enabling students to make well-informed career decisions and thus not take any haste decisions.
  
 -Implementing Natural Language Processing (NLP) for sentiment analysis on Career Vani, our 
  counseling website, offers numerous advantages
