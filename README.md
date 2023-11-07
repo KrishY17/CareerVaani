@@ -29,7 +29,7 @@ Career Prediction System
 -These ML models, integrated into career counseling platforms, provide personalized guidance, 
  enabling students to make well-informed career decisions and thus not take any haste decisions.
  
--Implementing Natural Language Processing (NLP) for sentiment analysis on Career Vani, our 
+-Implementing Natural Language Processing (NLP) for sentiment analysis on CareerVaani, our 
  counseling website, offers numerous advantages
  
 ![models](https://github.com/KrishY17/CareerVaani/assets/96617218/061d7cde-614a-44d1-8699-d74203b3d954)
